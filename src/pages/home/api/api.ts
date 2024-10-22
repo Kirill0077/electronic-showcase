@@ -2,7 +2,7 @@ import axios from "axios";
 import type { Product } from "@/entities/product";
 const instance = axios.create({
     baseURL: "https://fakestoreapi.com/products",
-    timeout: 1000,
+    timeout: 10000,
 });
 
 export async function getAllProgucts(): Promise<Product[]> {
